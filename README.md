@@ -20,7 +20,7 @@
 
 According to the [Domestic Movie Theatrical Market Summary 1995 to 2020](https://www.the-numbers.com/market/), in 2019, there was about 1.24 billion Movie Tickets sold in the United States. Given that information, one could now assume that there must be a great deal of money going to the Movie Industry. So how do we, as Movie Lovers, determine this amount of cash flow? We will have to focus on the Movie's revenue. In other words, **can we predict a Movie's United States Box Office revenue?**
 
-We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/data) with over 7,000 past films from [The Movie Database](https://www.themoviedb.org/) created on the Kaggle website that has selected features. In particular, those features are cast, crew, plot keywords, budget, posters, release dates, languages, production companies, countries and others. Then we select the appropriate features to train various regression models with custom hyperparameters. Afterwards, we will use our models' $R^2$ scores to determine the best model to answer this inquiry. In other words, our goal is to assist production compaines with deciding how they should invest to gain a return. 
+We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/data) with over 7,000 past films from [The Movie Database](https://www.themoviedb.org/) created on the Kaggle website that has selected features. In particular, those features are cast, crew, plot keywords, budget, posters, release dates, languages, production companies, countries and others. Then we select the appropriate features to train various regression models with custom hyperparameters. Afterwards, we will use our models' $R^2$ scores to determine the best model to answer this inquiry. In other words, our goal is to assist production companies with deciding how they should invest to gain a return. 
 
 
 ---
@@ -107,7 +107,7 @@ Despite the overfitting, this model can be use to predict the revenue of a US mo
 
 Yet, the RandomForestRegressor still had its limitations. We can not fully interpret it because it does not predict beyond the range of the training data. Also, it created an overfit on our dataset because it cannot handle the noise. In other words, additional noise features could hindered our model's results.
 
-We can improve our model's $R^2$ scores, if we further tuned our hyperparameters mand eliminated more outliers.
+We can improve our model's $R^2$ scores, if we further tuned our hyperparameters and eliminated more outliers.
 
 In the end, we still have lingering questions we need to ask:
 - Can we use a Convolutional Neural Network on the image data as part of a transfer learning process to engineer additional features in our prediction model?
